@@ -34,11 +34,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
          node-version: "14.x"
-       # Install project dependencies
+        # Install project dependencies
       - name: Install dependencies
         run: npm install 
   # Deploy To Heroku
-deploy:
+  deploy:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
